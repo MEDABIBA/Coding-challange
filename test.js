@@ -2,8 +2,8 @@
 // Typical tasks
 // ======================================================
 
-//  Задача: Найти первый повторяющийся элемент в массиве
-// Напиши функцию findFirstDuplicate(arr), которая возвращает первый элемент, появившийся более одного раза, или null, если таких нет.
+// Task: Find the first repeating element in an array
+// Write a function findFirstDuplicate(arr) that returns the first element that appears more than once, or null if there are none.
 const numbers = [1, 2, 8, 3, 5, 9, 6, 7, 4];
 function findFirstDuplicate(arr) {
   // Write your code here
@@ -12,7 +12,7 @@ function findFirstDuplicate(arr) {
 
 // ======================================================
 
-// Написать функцию, которая группирует всех пользователей по их роли в формате: {
+// Write a function that groups all users by their role in the format: {
 //   admin: [...],
 //   user: [...],
 //   guest: [...]
@@ -31,8 +31,8 @@ function sortByRole(array) {
 
 // ======================================================
 
-// Необходимо обработать массив таким образом, чтобы распределить людей по группам городов
-// Данные на вход
+// It is necessary to process the array in such a way as to distribute people into city groups
+// Input data:
 const people = [
   {
     name: "Alex",
@@ -63,8 +63,8 @@ const groupByCity = (array) => {
 
 // ======================================================
 
-// Напишите функцию findLongestWord(str), которая принимает строку str и возвращает самое длинное слово в этой строке.
-// Если несколько слов имеют одинаковую максимальную длину, вернуть первое из них.
+// Write a function findLongestWord(str) that takes a string str and returns the longest word in that string.
+// If several words have the same maximum length, return the first one.
 function findLongestWord(string) {
   // Write your code here
 }
@@ -73,8 +73,8 @@ function findLongestWord(string) {
 
 // ======================================================
 
-// Реализуй функцию isAnagram(str1, str2), которая проверяет, являются ли две строки анаграммами
-// (т.е. содержат одинаковые буквы в любом порядке, без учёта регистра и пробелов).
+// Implement the function isAnagram(str1, str2) that checks if two strings are anagrams
+// (i.e., contain the same letters in any order, regardless of case and spaces).
 function isAnagram(str1, str2) {
   // Write your code here
 }
@@ -85,8 +85,8 @@ function isAnagram(str1, str2) {
 
 // ======================================================
 
-// Реализуй функцию unique, которая принимает массив и возвращает новый массив,
-// содержащий только уникальные элементы в порядке их первого появления.
+// Implement the unique function that takes an array and returns a new array
+// containing only unique elements in the order of their first appearance.
 let giveUniqueNumber = [1, 9, 2, 3, 4, 2, 5, 6, 7, 8, 9];
 function unique(arr) {
   // Write your code here
@@ -95,7 +95,7 @@ function unique(arr) {
 
 // ======================================================
 
-// Напиши функцию groupBy, которая группирует массив объектов по значению указанного ключа.
+// Write a groupBy function that groups an array of objects by the value of the specified key.
 const data = [
   { id: 1, type: "fruit", name: "apple" },
   { id: 2, type: "vegetable", name: "carrot" },
@@ -117,7 +117,7 @@ function groupBy(data, type) {
 // }
 // ======================================================
 
-// Реализуй функцию flattenObject(obj), которая превращает вложенный объект в плоский с ключами через точку:
+// Implement the flattenObject(obj) function that converts a nested object into a flat one with keys separated by dots:
 const input = {
   a: 1,
   b: {
@@ -148,15 +148,15 @@ function calcSumByRecursiveWay(arr) {
 // console.log(calcSumByRecursiveWay(sumArr));
 
 // ======================================================
-// Tasks from interwiews
+// Tasks from interviews
 // ======================================================
 
 function findBiggestNumber(arr) {
   // Write your code here
 }
 // console.log(findBiggestNumber(sumArr));
-// Написати функцію sortStudentsByAge, яка приймає масив students і повертає масив їх імен, відсортований за віком у порядку зменшення.-1
-// Заборонено використовувати метод .sort(), рекурсії, цикл у циклі, більше одного явного виклику циклу (for, .foreach(), .map(), .reduce(), .filter(), etc)
+// Write a function sortStudentsByAge that takes an array of students and returns an array of their names, sorted by age in descending order.
+// It is forbidden to use the .sort() method, recursion, nested loops, more than one explicit loop call (for, .foreach(), .map(), .reduce(), .filter(), etc)
 const students = [
   { name: "Alice", age: 21, courses: ["Math", "Physics"] },
   { name: "Bob", age: 19, courses: ["Computer Science"] },
@@ -171,32 +171,32 @@ function sortStudentsByAge(students) {
 //    sortStudentsByAge(students),
 //    'result'
 // );
-// Очікуваний результат
+// Expected result
 // [ 'Alice', 'Charlie', 'Bob' ]
 
 // ======================================================
 
-// Задача: Реализация once
-// Реализуй функцию once(fn), которая принимает функцию fn и возвращает новую функцию, которую можно вызвать только один раз
-// При повторных вызовах должна возвращаться та же самая первая возвращённая fn - ом величина.
+// Task: Implementation of once
+// Implement the once(fn) function that takes a function fn and returns a new function that can only be called once
+// On repeated calls, the same first value returned by fn should be returned.
 function once(consoleLog) {
   // Write your code here
 }
 const logOnce = once(console.log);
-// logOnce("Hello"); // выводит "Hello"
-// logOnce("World"); // ничего не происходит
+// logOnce("Hello"); // outputs "Hello"
+// logOnce("World"); // nothing happens
 
 // ======================================================
 
 let arrNumbers = [1, 7, 4, 2, 9, 5, 3, 6, 8];
 
-// Реализуйте функцию-шпиона spy, которая работает следующим образом:
-// принимает на вход любую функцию, например:
+// Implement a spy function that works as follows:
+// takes any function as input, for example:
 function foo(a) {
   return a;
 }
 const spyFoo = spy(foo);
-// и может следить за ее вызовами
+// and can monitor its calls
 // spyFoo.calledWith('test123'); // out: false
 // spyFoo.returned('test'); // out: true
 // spyFoo.callCount(); // out: 1
@@ -211,9 +211,9 @@ function spy(func) {
 // ======================================================
 
 /**
-  Есть массив операций.
-  Необходимо операции отсортировать по дате и сгруппировать их по году, а в качестве 
-  значений представить массивы c датами в формате MM-DD.
+  There is an array of operations.
+  It is necessary to sort the operations by date and group them by year, and as 
+  values present arrays with dates in MM-DD format.
 */
 const operations = [
   { date: "2017-07-31", amount: "5422" },
@@ -233,7 +233,7 @@ function sortOperations(operations) {
   // Write your code here
 }
 // console.log(sortOperations(operations))
-//   Пример результата:
+//   Example result:
 //   result = {
 //     "2017": [
 //       "07-31",
@@ -243,16 +243,16 @@ function sortOperations(operations) {
 //       "01-01"
 //       "02-22"
 //     ]
-// }
+//   }
 
 // ======================================================
 
-// Функция которая возвращает массив из k самых частых слов, отсортированных:
-// 1 по убыванию частоты,
-// 2 при равной частоте — в лексикографическом порядке (по алфавиту).
-// Нельзя использовать .sort() над исходным массивом.
-// Разрешён один явный проход по массиву (for, reduce, и т.п.).
-// Можно использовать объекты и методы массива.
+// Function that returns an array of k most frequent words, sorted by:
+// 1 by decreasing frequency,
+// 2 with equal frequency — in lexicographic order (alphabetically).
+// Cannot use .sort() on the original array.
+// Only one explicit pass through the array is allowed (for, reduce, etc.).
+// Can use objects and array methods.
 const words = ["apple", "banana", "apple", "orange", "banana", "apple", "kiwi"];
 function topKFrequent(wordsArray, quantity) {
   // Write your code here
