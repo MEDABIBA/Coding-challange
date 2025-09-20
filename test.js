@@ -147,6 +147,10 @@ function calcSumByRecursiveWay(arr) {
 }
 // console.log(calcSumByRecursiveWay(sumArr));
 
+// Function to find unique elements in an array
+function findUniqueElement(arr) {}
+console.log(findUniqueElement([1, 2, 3, 4, 1, 2, 3]));
+
 // ======================================================
 // Tasks from interviews
 // ======================================================
@@ -187,8 +191,6 @@ const logOnce = once(console.log);
 // logOnce("World"); // nothing happens
 
 // ======================================================
-
-let arrNumbers = [1, 7, 4, 2, 9, 5, 3, 6, 8];
 
 // Implement a spy function that works as follows:
 // takes any function as input, for example:
@@ -262,19 +264,23 @@ function topKFrequent(wordsArray, quantity) {
 // → ["apple", "banana"]
 
 // ======================================================
+
+// write function that removes all duplicates in strings
+const removeDuplicates = (str) => {};
+// console.log("Test-2 output: ", removeDuplicates("lol")); // "o"
+// console.log("Test-2 output: ", removeDuplicates("boom")); // "bm"
+
+// ======================================================
 // Here are some sorting algorithms
 // ======================================================
 
+let arrNumbers = [1, 7, 4, 2, 9, 5, 3, 6, 8];
 //  bubble sort
-function bubbleAlg(arr) {
-  // Write your code here
-}
-// console.log(bubbleAlg(arrNumbers))
+function bubbleAlg(arr) {}
+// console.log(bubbleAlg(arrNumbers));
 
 // ======================================================
 
 // quick sort
-function quickSort(numArr) {
-  // Write your code here
-}
-// console.log(quickSort(arrNumbers))
+function quickSort(numArr) {}
+// console.log(quickSort(arrNumbers));

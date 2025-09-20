@@ -11,26 +11,13 @@
 // expected order: ?
 
 // 2) Chain with return, throw, finally
-Promise.resolve("p0")
-  .then((v) => {
-    console.log("t1", v);
-    return "p1";
-  })
-  .then((v) => {
-    console.log("t2", v);
-    throw "err";
-  })
-  .catch((e) => {
-    console.log("c1", e);
-    return "p2";
-  })
-  .finally(() => {
-    console.log("f1");
-  })
-  .then((v) => {
-    console.log("t3", v);
-  });
-// expected order: t1 p0, t2, p0, err, f1
+// Promise.resolve('p0')
+//   .then(v => { console.log('t1', v); return 'p1'; })
+//   .then(v => { console.log('t2', v); throw 'err'; })
+//   .catch(e => { console.log('c1', e); return 'p2'; })
+//   .finally(() => { console.log('f1'); })
+//   .then(v => { console.log('t3', v); });
+// expected order: ?
 
 // 3) Microtasks, added inside microtasks
 // console.log('S');
